@@ -9,10 +9,10 @@
   },
   {
     "name": "Animal.*",
-    "ratio": 3
+    "ratio": 1
   },
   {
     "name": "StaticHeliCrash",
-    "ratio": 5
+    "ratio": 1
   }
 ]

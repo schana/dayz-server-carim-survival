@@ -265,19 +265,6 @@
     }
   },
   {
-    "description": "lower hacksaw spawn rate",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "^Hacksaw$"
-      }
-    ],
-    "modification": {
-      "nominal": 5,
-      "min": 4
-    }
-  },
-  {
     "description": "remove items that shouldn't spawn",
     "action": "remove",
     "matching": [
@@ -327,47 +314,6 @@
     ],
     "modification": {
       "restock": 600
-    }
-  },
-  {
-    "description": "Set lifetime for vehicles",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "(CivilianSedan|OffroadHatchback|Hatchback_02|Sedan_02|CrSk_BMW_525i_E34)(?!.*(Door|Hood|Trunk|Wheel)).*"
-      }
-    ],
-    "modification": {
-      "lifetime": 3888000
-    }
-  },
-  {
-    "description": "Simple Base remove item spawns",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "Chopper(?!.*(Kit|Bracket|Hinge)).*"
-      }
-    ],
-    "modification": {
-      "nominal": 0,
-      "min": 0,
-      "restock": 0,
-      "lifetime": 3888000
-    }
-  },
-  {
-    "description": "Simple Base remove kit spawns",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "Chopper.*Kit"
-      }
-    ],
-    "modification": {
-      "nominal": 0,
-      "min": 0,
-      "restock": 0
     }
   }
 ]

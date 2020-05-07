@@ -44,7 +44,7 @@
   "server": {
     "always_recover": false,
     "executable": "DayZServer_x64.exe",
-    "gameport": 2302,
+    "gameport": 2502,
     "launch_parameters": [
       "-adminlog",
       "-freezecheck",
