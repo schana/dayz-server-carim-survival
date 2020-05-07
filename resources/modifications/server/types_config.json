@@ -1,0 +1,373 @@
+[
+  {
+    "description": "Make mod gear at least tier 3",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(MSFC|MilitaryGear|Mass).*"
+      }
+    ],
+    "modification": {
+      "value": [
+        {
+          "name": "Tier4"
+        },
+        {
+          "name": "Tier3"
+        }
+      ]
+    }
+  },
+  {
+    "description": "enable all tier 4 spawns with default rates",
+    "action": "modify",
+    "matching": [
+      {
+        "value": [
+          {
+            "name": "Tier4"
+          }
+        ]
+      }
+    ],
+    "modification": {
+      "flags": [
+        {
+          "name": "deloot",
+          "value": false
+        },
+        {
+          "name": "count_in_cargo",
+          "value": false
+        },
+        {
+          "name": "count_in_hoarder",
+          "value": false
+        },
+        {
+          "name": "count_in_player",
+          "value": false
+        }
+      ],
+      "nominal": 5,
+      "min": 3
+    }
+  },
+  {
+    "description": "deloot fancy snipers",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(csmcmillan_mung|MSFC_Barret50BMG.*|MSFC_OSV96)"
+      }
+    ],
+    "modification": {
+      "nominal": 10,
+      "min": 8,
+      "flags": [
+        {
+          "name": "deloot",
+          "value": true
+        }
+      ],
+      "value": [
+        {
+          "name": "Tier4"
+        }
+      ]
+    }
+  },
+  {
+    "description": "make tents and nvgs tier 4",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(.*Tent|MSFC_GPNVG18.*)"
+      }
+    ],
+    "modification": {
+      "value": [
+        {
+          "name": "Tier4"
+        }
+      ]
+    }
+  },
+  {
+    "description": "fix msfc categories for weapons marked as clothes",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "MSFC.*(ORSIS_T5000|OSV|P250|L96A1|Barret|AR15|Suppressor|PP19|Tomahawk|Knife).*",
+        "category": {
+          "name": "clothes"
+        }
+      }
+    ],
+    "modification": {
+      "category": {
+        "name": "weapons"
+      }
+    }
+  },
+  {
+    "description": "fix categories for mcmillan items",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(Mag_cs5_10Rnd_mung|.*mcmillan.*)",
+        "category": {
+          "name": "(?!weapons)"
+        }
+      }
+    ],
+    "modification": {
+      "category": {
+        "name": "weapons"
+      }
+    }
+  },
+  {
+    "description": "lower all clothes spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "category": {
+          "name": "clothes"
+        }
+      }
+    ],
+    "modification": {
+      "nominal": 3,
+      "min": 2
+    }
+  },
+  {
+    "description": "lower msfc clothes and canteen spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "MSFC.*",
+        "category": {
+          "name": "clothes"
+        }
+      },
+      {
+        "name": "MSFCCanteen.*"
+      }
+    ],
+    "modification": {
+      "nominal": 2,
+      "min": 1
+    }
+  },
+  {
+    "description": "set tier 4 weapons spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
+        "category": {
+            "name": "weapons"
+        },
+        "value": [
+            {
+                "name": "Tier4"
+            }
+        ]
+      }
+    ],
+    "modification": {
+      "nominal": 5,
+      "min": 3
+    }
+  },
+  {
+    "description": "set tier 3 weapons spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
+        "category": {
+            "name": "weapons"
+        },
+        "value": [
+            {
+                "name": "Tier3"
+            }
+        ]
+      }
+    ],
+    "modification": {
+      "nominal": 10,
+      "min": 6
+    }
+  },
+  {
+    "description": "set tier 2 weapons spawn rates",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
+        "category": {
+            "name": "weapons"
+        },
+        "value": [
+            {
+                "name": "Tier2"
+            }
+        ]
+      }
+    ],
+    "modification": {
+      "nominal": 15,
+      "min": 10
+    }
+  },
+  {
+    "description": "increase battery9v rate",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "Battery9V"
+      }
+    ],
+    "modification": {
+      "nominal": 200,
+      "min": 140,
+      "usage": [
+        {
+          "name": "Industrial"
+        },
+        {
+          "name": "Village"
+        },
+        {
+          "name": "Town"
+        },
+        {
+          "name": "Farm"
+        }
+      ]
+    }
+  },
+  {
+    "description": "lower pot spawn rate",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "^Pot$"
+      }
+    ],
+    "modification": {
+      "nominal": 30,
+      "min": 20
+    }
+  },
+  {
+    "description": "lower hacksaw spawn rate",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "^Hacksaw$"
+      }
+    ],
+    "modification": {
+      "nominal": 5,
+      "min": 4
+    }
+  },
+  {
+    "description": "remove items that shouldn't spawn",
+    "action": "remove",
+    "matching": [
+      {
+        "name": "MSFC.*(Golden|Gray|HELL|WOODLAND|Woodland|Tan|Western|BLUE|RED|GREEN|WHITE|SNAKE|VIPER|Desert|Green|ATACS_AU|ATACS_FG|DARK|EMR|Flecktarn|HEX|Honeycomb|MARPAT_WD|MATRIX|ORANGE|STAR|SURPAT|White|Kryptek|Multicam|MULTICAM).*",
+        "category": {
+          "name": "weapons"
+        }
+      },
+      {
+        "name": ".*(GiftBox|GreatHelm|Ghillie|Santas|Paper|Zippo|PumpkinHelmet|TruckBattery|DallasMask|HoxtonMask|MilitaryGear_TortillaBag_PartizanM).*"
+      },
+      {
+        "name": ".*(makeshifttent|victorian_glasses|sleepingbag|thermos|dutchoven|dapper|dynamitestick|shovel|Lennon_glasses|baseball|ballgrill|bowieknife|castiron|bat|guitar|mask|ketchup|knife|vinegar|Wood|wooden|hardigg|carrierrig).*[Mm]ung.*"
+      },
+      {
+        "name": "Mass.*(Fedora|CatEars|Meth|MRE).*"
+      },
+      {
+        "name": "(jesterhat|(melee|rifle)sling|SAK|Scythe|cigar|joint|sherlockpipe|lebedev_PL15|kv5).*_[Mm]ung"
+      },
+      {
+        "name": "MSFC(?!Canteen).*",
+        "category": {
+          "name": "food"
+        }
+      },
+      {
+        "name": "MSFC.*(TacticalBeard|OpsCore|Weapon_Tool_Box|FirstAidKit|Glasses|Snow|CombatHeadphones|PohuinBottle|BottlePouch).*"
+      }
+    ]
+  },
+  {
+    "description": "Set restock time for items that don't have it",
+    "action": "modify",
+    "matching": [
+      {
+        "nominal": "(?!(^0$)).*",
+        "restock": "^0$",
+        "flags": [
+          {
+            "name": "deloot",
+            "value": false
+          }
+        ]
+        }
+    ],
+    "modification": {
+      "restock": 600
+    }
+  },
+  {
+    "description": "Set lifetime for vehicles",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "(CivilianSedan|OffroadHatchback|Hatchback_02|Sedan_02|CrSk_BMW_525i_E34)(?!.*(Door|Hood|Trunk|Wheel)).*"
+      }
+    ],
+    "modification": {
+      "lifetime": 3888000
+    }
+  },
+  {
+    "description": "Simple Base remove item spawns",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "Chopper(?!.*(Kit|Bracket|Hinge)).*"
+      }
+    ],
+    "modification": {
+      "nominal": 0,
+      "min": 0,
+      "restock": 0,
+      "lifetime": 3888000
+    }
+  },
+  {
+    "description": "Simple Base remove kit spawns",
+    "action": "modify",
+    "matching": [
+      {
+        "name": "Chopper.*Kit"
+      }
+    ],
+    "modification": {
+      "nominal": 0,
+      "min": 0,
+      "restock": 0
+    }
+  }
+]

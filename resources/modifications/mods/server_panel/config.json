@@ -1,0 +1,30 @@
+{
+    "SERVERNAME": "Welcome to Carim!",
+    "BUTTON1NAME": "DISCORD",
+    "BUTTON1LINK": "https://discord.gg/kdPnVu4",
+    "BUTTON2NAME": "WEBSITE",
+    "BUTTON2LINK": "https://github.com/schana/dayz-server-carim",
+    "BUTTON3NAME": "DONATE",
+    "BUTTON3LINK": "https://www.paypal.me/cnofafva",
+    "BUTTONTAB0NAME": "Information",
+    "BUTTONTAB1NAME": "Rules",
+    "BUTTONTAB2NAME": "Support",
+    "BUTTONTAB3NAME": "",
+    "DISPLAYPLAYERINFO": 1,
+    "DISPLAYPLAYERTAB": 1,
+    "sServerTab0": [
+        "This server was created as a platform to develop an open source configuration tool for DayZ servers.",
+        "Building a working economy and configuring mods takes time and effort, but with this tool, ",
+        "anyone should be able to stand up and modify a DayZ server with ease.",
+        "All the configuration and utilities to generate it are available at https://github.com/schana/dayz-server-carim"
+    ],
+    "sServerTab1": [
+        "Rules will be developed as the community grows"
+    ],
+    "sServerTab2": [
+        "Support is available in the #tickets channel on Discord"
+    ],
+    "sServerTab3": [
+        ""
+    ]
+}
