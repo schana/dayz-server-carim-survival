@@ -124,7 +124,12 @@
     "modification": {
       "category": {
         "name": "weapons"
-      }
+      },
+      "value": [
+        {
+          "name": "Tier4"
+        }
+      ]
     }
   },
   {
@@ -168,12 +173,12 @@
       {
         "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
         "category": {
-            "name": "weapons"
+          "name": "weapons"
         },
         "value": [
-            {
-                "name": "Tier4"
-            }
+          {
+            "name": "Tier4"
+          }
         ]
       }
     ],
@@ -189,12 +194,12 @@
       {
         "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
         "category": {
-            "name": "weapons"
+          "name": "weapons"
         },
         "value": [
-            {
-                "name": "Tier3"
-            }
+          {
+            "name": "Tier3"
+          }
         ]
       }
     ],
@@ -210,12 +215,12 @@
       {
         "name": "(?!.*(Bu?ttsto?ck|Optic|Light|Suppressor|Goggles|Bayonet|[mM]ag|Hndgrd|Knife|Ammo|Compensator|LRS|Scope|Muzzle|drum|Holo|Binocs|STANAG|Mushroom).*)",
         "category": {
-            "name": "weapons"
+          "name": "weapons"
         },
         "value": [
-            {
-                "name": "Tier2"
-            }
+          {
+            "name": "Tier2"
+          }
         ]
       }
     ],
@@ -294,11 +299,14 @@
       },
       {
         "name": "MSFC.*(TacticalBeard|OpsCore|Weapon_Tool_Box|FirstAidKit|Glasses|Snow|CombatHeadphones|PohuinBottle|BottlePouch).*"
+      },
+      {
+        "name": "(CivSedan|Sedan_02|Hatchback|HeadlightH7|CarBattery|TruckBattery|CarRadiator).*"
       }
     ]
   },
   {
-    "description": "Set restock time for items that don't have it",
+    "description": "Set restock time for items that have it set to 0",
     "action": "modify",
     "matching": [
       {
@@ -310,7 +318,7 @@
             "value": false
           }
         ]
-        }
+      }
     ],
     "modification": {
       "restock": 600

@@ -6,54 +6,6 @@
     "server_side": false
   },
   {
-    "directory": "@VPPNotifications",
-    "disable_updates": false,
-    "file_id": 1680673106,
-    "server_side": false
-  },
-  {
-    "directory": "@VPPAdminTools",
-    "disable_updates": false,
-    "file_id": 1708571078,
-    "server_side": false
-  },
-  {
-    "directory": "@DayZ-Expansion-Chat",
-    "disable_updates": false,
-    "file_id": 1927567004,
-    "server_side": false
-  },
-  {
-    "directory": "@SchanaModAutorun",
-    "disable_updates": false,
-    "file_id": 2031792120,
-    "server_side": false
-  },
-  {
-    "directory": "@SchanaModExpansionChatRCon",
-    "disable_updates": false,
-    "file_id": 2061823484,
-    "server_side": false
-  },
-  {
-    "directory": "@SchanaModCompass",
-    "disable_updates": false,
-    "file_id": 2067834152,
-    "server_side": false
-  },
-  {
-    "directory": "@SchanaModParty",
-    "disable_updates": false,
-    "file_id": 2080840725,
-    "server_side": false
-  },
-  {
-    "directory": "@Ear-Plugs",
-    "disable_updates": false,
-    "file_id": 1819514788,
-    "server_side": false
-  },
-  {
     "directory": "@SQUAD MSF-C",
     "disable_updates": false,
     "file_id": 1583941197,
@@ -75,6 +27,78 @@
     "directory": "@MasssManyItemOverhaul",
     "disable_updates": false,
     "file_id": 1566911166,
+    "server_side": false
+  },
+  {
+    "directory": "@DisableGardenPlots",
+    "disable_updates": false,
+    "file_id": 1719445243,
+    "server_side": false
+  },
+  {
+    "directory": "@VPPNotifications",
+    "disable_updates": false,
+    "file_id": 1680673106,
+    "server_side": false
+  },
+  {
+    "directory": "@VPPAdminTools",
+    "disable_updates": false,
+    "file_id": 1708571078,
+    "server_side": false
+  },
+  {
+    "directory": "@Ear-Plugs",
+    "disable_updates": false,
+    "file_id": 1819514788,
+    "server_side": false
+  },
+  {
+    "directory": "@DayZ-Expansion-Chat",
+    "disable_updates": false,
+    "file_id": 1927567004,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModExpansionChatRCon",
+    "disable_updates": false,
+    "file_id": 2061823484,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModNoVehicleDamage",
+    "disable_updates": false,
+    "file_id": 2022423344,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModAutorun",
+    "disable_updates": false,
+    "file_id": 2031792120,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModSurvivorSelect",
+    "disable_updates": false,
+    "file_id": 2037681580,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModCompass",
+    "disable_updates": false,
+    "file_id": 2067834152,
+    "server_side": false
+  },
+  {
+    "directory": "@SchanaModParty",
+    "disable_updates": false,
+    "file_id": 2075831381,
+    "server_side": false
+  },
+  {
+    "directory": "@CFDZPlugin",
+    "disable_updates": false,
+    "file_id": 1874598419,
     "server_side": false
   }
 ]

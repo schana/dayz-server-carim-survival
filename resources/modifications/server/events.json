@@ -14,5 +14,9 @@
   {
     "name": "StaticHeliCrash",
     "ratio": 1
+  },
+  {
+    "name": "Vehicle.*",
+    "ratio": 0
   }
 ]

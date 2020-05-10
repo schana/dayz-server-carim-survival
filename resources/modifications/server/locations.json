@@ -1,23 +1,18 @@
 [
   {
-    "name": "Green Mountain Trader",
+    "name": "Green Mountain",
     "x": 3727,
     "z": 6007
   },
   {
-    "name": "Kumyrna Trader",
+    "name": "Kumyrna",
     "x": 8355,
     "z": 5986
   },
   {
-    "name": "Altar Trader",
+    "name": "Altar",
     "x": 8164,
     "z": 9113
-  },
-  {
-    "name": "Zabolotye Black Market Trader",
-    "x": 1602.85,
-    "z": 10413.2
   },
   {
     "name": "NWAF",
