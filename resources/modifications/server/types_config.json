@@ -306,22 +306,66 @@
     ]
   },
   {
-    "description": "Set restock time for items that have it set to 0",
+    "description": "Remove Tiers",
     "action": "modify",
     "matching": [
       {
-        "nominal": "(?!(^0$)).*",
-        "restock": "^0$",
-        "flags": [
+        "name": ".*"
+      }
+    ],
+    "modification": {
+      "value": []
+    }
+  },
+  {
+    "description": "set Military ratio",
+    "action": "ratio",
+    "matching": [
+      {
+        "nominal": "^[^0]",
+        "usage": [
           {
-            "name": "deloot",
-            "value": false
+            "name": "Military"
           }
         ]
       }
     ],
     "modification": {
-      "restock": 600
+      "ratio": 0.3
+    }
+  },
+  {
+    "description": "set Industrial ratio",
+    "action": "ratio",
+    "matching": [
+      {
+        "nominal": "^[^0]",
+        "usage": [
+          {
+            "name": "Industrial"
+          }
+        ]
+      }
+    ],
+    "modification": {
+      "ratio": 1.3
+    }
+  },
+  {
+    "description": "set Hunting ratio",
+    "action": "ratio",
+    "matching": [
+      {
+        "nominal": "^[^0]",
+        "usage": [
+          {
+            "name": "Hunting"
+          }
+        ]
+      }
+    ],
+    "modification": {
+      "ratio": 2
     }
   }
 ]
