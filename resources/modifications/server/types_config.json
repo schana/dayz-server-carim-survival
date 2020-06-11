@@ -1,138 +1,5 @@
 [
   {
-    "description": "Make mod gear at least tier 3",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "(MSFC|MilitaryGear|Mass).*"
-      }
-    ],
-    "modification": {
-      "value": [
-        {
-          "name": "Tier4"
-        },
-        {
-          "name": "Tier3"
-        }
-      ]
-    }
-  },
-  {
-    "description": "enable all tier 4 spawns with default rates",
-    "action": "modify",
-    "matching": [
-      {
-        "value": [
-          {
-            "name": "Tier4"
-          }
-        ]
-      }
-    ],
-    "modification": {
-      "flags": [
-        {
-          "name": "deloot",
-          "value": false
-        },
-        {
-          "name": "count_in_cargo",
-          "value": false
-        },
-        {
-          "name": "count_in_hoarder",
-          "value": false
-        },
-        {
-          "name": "count_in_player",
-          "value": false
-        }
-      ],
-      "nominal": 5,
-      "min": 3
-    }
-  },
-  {
-    "description": "deloot fancy snipers",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "(csmcmillan_mung|MSFC_Barret50BMG.*|MSFC_OSV96)"
-      }
-    ],
-    "modification": {
-      "nominal": 10,
-      "min": 8,
-      "flags": [
-        {
-          "name": "deloot",
-          "value": true
-        }
-      ],
-      "value": [
-        {
-          "name": "Tier4"
-        }
-      ]
-    }
-  },
-  {
-    "description": "make tents and nvgs tier 4",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "(.*Tent|MSFC_GPNVG18.*)"
-      }
-    ],
-    "modification": {
-      "value": [
-        {
-          "name": "Tier4"
-        }
-      ]
-    }
-  },
-  {
-    "description": "fix msfc categories for weapons marked as clothes",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "MSFC.*(ORSIS_T5000|OSV|P250|L96A1|Barret|AR15|Suppressor|PP19|Tomahawk|Knife).*",
-        "category": {
-          "name": "clothes"
-        }
-      }
-    ],
-    "modification": {
-      "category": {
-        "name": "weapons"
-      }
-    }
-  },
-  {
-    "description": "fix categories for mcmillan items",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "(Mag_cs5_10Rnd_mung|.*mcmillan.*)",
-        "category": {
-          "name": "(?!weapons)"
-        }
-      }
-    ],
-    "modification": {
-      "category": {
-        "name": "weapons"
-      },
-      "value": [
-        {
-          "name": "Tier4"
-        }
-      ]
-    }
-  },
-  {
     "description": "lower all clothes spawn rates",
     "action": "modify",
     "matching": [
@@ -145,25 +12,6 @@
     "modification": {
       "nominal": 3,
       "min": 2
-    }
-  },
-  {
-    "description": "lower msfc clothes and canteen spawn rates",
-    "action": "modify",
-    "matching": [
-      {
-        "name": "MSFC.*",
-        "category": {
-          "name": "clothes"
-        }
-      },
-      {
-        "name": "MSFCCanteen.*"
-      }
-    ],
-    "modification": {
-      "nominal": 2,
-      "min": 1
     }
   },
   {
@@ -274,34 +122,7 @@
     "action": "remove",
     "matching": [
       {
-        "name": "MSFC.*(Golden|Gray|HELL|WOODLAND|Woodland|Tan|Western|BLUE|RED|GREEN|WHITE|SNAKE|VIPER|Desert|Green|ATACS_AU|ATACS_FG|DARK|EMR|Flecktarn|HEX|Honeycomb|MARPAT_WD|MATRIX|ORANGE|STAR|SURPAT|White|Kryptek|Multicam|MULTICAM).*",
-        "category": {
-          "name": "weapons"
-        }
-      },
-      {
-        "name": ".*(GiftBox|GreatHelm|Ghillie|Santas|Paper|Zippo|PumpkinHelmet|TruckBattery|DallasMask|HoxtonMask|MilitaryGear_TortillaBag_PartizanM).*"
-      },
-      {
-        "name": ".*(makeshifttent|victorian_glasses|sleepingbag|thermos|dutchoven|dapper|dynamitestick|shovel|Lennon_glasses|baseball|ballgrill|bowieknife|castiron|bat|guitar|mask|ketchup|knife|vinegar|Wood|wooden|hardigg|carrierrig).*[Mm]ung.*"
-      },
-      {
-        "name": "Mass.*(Fedora|CatEars|Meth|MRE).*"
-      },
-      {
-        "name": "(jesterhat|(melee|rifle)sling|SAK|Scythe|cigar|joint|sherlockpipe|lebedev_PL15|kv5).*_[Mm]ung"
-      },
-      {
-        "name": "MSFC(?!Canteen).*",
-        "category": {
-          "name": "food"
-        }
-      },
-      {
-        "name": "MSFC.*(TacticalBeard|OpsCore|Weapon_Tool_Box|FirstAidKit|Glasses|Snow|CombatHeadphones|PohuinBottle|BottlePouch).*"
-      },
-      {
-        "name": "(CivSedan|Sedan_02|Hatchback|HeadlightH7|CarBattery|TruckBattery|CarRadiator).*"
+        "name": ".*(GiftBox|GreatHelm|Ghillie|Santas|Paper|Zippo|PumpkinHelmet|TruckBattery|DallasMask|HoxtonMask).*"
       }
     ]
   },
@@ -331,7 +152,7 @@
       }
     ],
     "modification": {
-      "ratio": 0.3
+      "ratio": 1.0
     }
   },
   {

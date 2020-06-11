@@ -12,11 +12,19 @@
     "ratio": 1
   },
   {
+    "name": "AnimalWolf",
+    "ratio": 2
+  },
+  {
+    "name": "AnimalBear",
+    "ratio": 8
+  },
+  {
     "name": "StaticHeliCrash",
     "ratio": 1
   },
   {
     "name": "Vehicle.*",
-    "ratio": 0
+    "ratio": 1
   }
 ]
