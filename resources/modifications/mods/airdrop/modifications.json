@@ -1,0 +1,219 @@
+{
+  "Controls": {
+    "Interval": 30,
+    "Mode": 3
+  },
+  "Map": {
+    "Offset": 10000
+  },
+  "Aircraft": {
+    "AirSpeedKIAS": 90
+  },
+  "Messages": {
+    "Mode": 1,
+    "Duration": 30,
+    "Proximity": 2000
+  },
+  "Container": {
+    "FallRate": 1,
+    "Lifespan": 45
+  },
+  "DropZoneDefaults": {
+    "DropType": "RANDOM",
+    "Zombies": 20,
+    "Radius": 50,
+    "DropAccuracy": 100
+  },
+  "DropZones": [
+    {
+      "Title": "Player Called",
+      "Location": "RANDOM",
+      "X": 0,
+      "Z": 0
+    },
+    {
+      "Title": "Balota Airstrip",
+      "Location": "Military",
+      "X": 5025,
+      "Z": 2455
+    },
+    {
+      "Title": "Berezino",
+      "Location": "Industrial",
+      "X": 12450,
+      "Z": 9250
+    },
+    {
+      "Title": "Chernogorsk",
+      "Location": "Industrial",
+      "X": 7400,
+      "Z": 3500
+    },
+    {
+      "Title": "Elektrozavodsk",
+      "Location": "City",
+      "X": 10050,
+      "Z": 2450
+    },
+    {
+      "Title": "Gorka",
+      "Location": "Wolfpack",
+      "X": 8775,
+      "Z": 9200
+    },
+    {
+      "Title": "Krasnostav Airstrip",
+      "Location": "Military",
+      "X": 12160,
+      "Z": 12645
+    },
+    {
+      "Title": "Myshkino",
+      "Location": "Country",
+      "X": 1900,
+      "Z": 7600
+    },
+    {
+      "Title": "Myshkino Military",
+      "Location": "Military",
+      "X": 1237,
+      "Z": 7231
+    },
+    {
+      "Title": "Northwest Airfield",
+      "Location": "Military",
+      "X": 4500,
+      "Z": 10350
+    },
+    {
+      "Title": "NWAF Construction",
+      "Location": "Military",
+      "X": 5329,
+      "Z": 9690
+    },
+    {
+      "Title": "NWAF Tents",
+      "Location": "Military",
+      "X": 4060,
+      "Z": 11000
+    },
+    {
+      "Title": "Novaya Petrovka",
+      "Location": "City",
+      "X": 3100,
+      "Z": 12840
+    },
+    {
+      "Title": "Novodmitrovsk",
+      "Location": "City",
+      "X": 11475,
+      "Z": 14356
+    },
+    {
+      "Title": "Skalisty Island",
+      "Location": "Country",
+      "X": 13575,
+      "Z": 3055
+    },
+    {
+      "Title": "Soverograd",
+      "Location": "City",
+      "X": 8566,
+      "Z": 12755
+    },
+    {
+      "Title": "Novy Sobor",
+      "Location": "Military",
+      "X": 7080,
+      "Z": 7849
+    },
+    {
+      "Title": "Stary Sobor",
+      "Location": "Military",
+      "X": 6394,
+      "Z": 7842
+    },
+    {
+      "Title": "Veresnik",
+      "Location": "Country",
+      "X": 4000,
+      "Z": 7850
+    },
+    {
+      "Title": "Zelenogorsk",
+      "Location": "Country",
+      "X": 2452,
+      "Z": 5452
+    },
+    {
+      "Title": "Zelenogorsk Military",
+      "Location": "Military",
+      "X": 2366,
+      "Z": 5000
+    },
+    {
+      "Title": "Northeast Airfield",
+      "Location": "Military",
+      "X": 11963,
+      "Z": 12570
+    },
+    {
+      "Title": "Devil's Castle",
+      "Location": "Military",
+      "X": 6775,
+      "Z": 11375
+    }
+  ],
+  "DropTypeDefaults": {
+    "Container": "AirdropContainer",
+    "Quantity": 20,
+    "AddFlare": 0,
+    "SpawnMin": 1,
+    "SpawnMax": 3,
+    "SpawnOffset": 0.001
+  },
+  "DropTypes": [
+    {
+      "Title": "Military",
+      "Items": [
+        "A2M14_DMR",
+        "A2M14_DMRMAG",
+        "A2WM110_desert",
+        "A2WM110_black",
+        "A2WM110_mag",
+        "A2M16A4",
+        "A2mk17",
+        "A2mk17_mag",
+        "A2mk17_s",
+        "A2G36_C",
+        "A2AS50",
+        "A2AS50_Magazine",
+        "A2bizon",
+        "bizon_magazine",
+        "A2M240",
+        "m240_magazine",
+        "A2MK16",
+        "A2MK48",
+        "A2MK48_Magazine",
+        "A2M107",
+        "A2M107_Magazine",
+        "A2M40A3",
+        "A2M40A3_Magazine",
+        "A2AA12",
+        "A2AA12_Magazine",
+        "A2AK74S",
+        "A2M24_Desert",
+        "A2M24_Green",
+        "A2M249",
+        "A2M249_Magazine",
+        "A2PKM",
+        "A2PKM_Magazine",
+        "A2M9",
+        "A2M9_Magazine",
+        "A2Suppressor",
+        "A2LRRAWM",
+        "A2LRRAWM_Magazine"
+      ]
+    }
+  ]
+}
