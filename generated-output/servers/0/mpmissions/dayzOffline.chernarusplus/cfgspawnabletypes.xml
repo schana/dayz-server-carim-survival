@@ -21,6 +21,24 @@
   <type name="MediumTent">    
     <hoarder/>    
   </type>  
+  <type name="MediumTent_Green">    
+    <hoarder/>    
+  </type>  
+  <type name="MediumTent_Orange">    
+    <hoarder/>    
+  </type>  
+  <type name="PartyTent">    
+    <hoarder/>    
+  </type>  
+  <type name="PartyTent_Blue">    
+    <hoarder/>    
+  </type>  
+  <type name="PartyTent_Brown">    
+    <hoarder/>    
+  </type>  
+  <type name="PartyTent_Lunapark">    
+    <hoarder/>    
+  </type>  
   <type name="SeaChest">    
     <hoarder/>    
   </type>  
@@ -2054,6 +2072,15 @@
       <item chance="0.60" name="Mag_Saiga_5Rnd"/>      
       <item chance="0.40" name="Mag_Saiga_8Rnd"/>      
       <item chance="0.20" name="Mag_Saiga_Drum20Rnd"/>      
+    </attachments>    
+  </type>  
+  <type name="Ruger1022">    
+    <attachments chance="0.10">      
+      <item chance="1.00" name="HuntingOptic"/>      
+    </attachments>    
+    <attachments chance="0.18">      
+      <item chance="0.30" name="Mag_Ruger1022_30Rnd"/>      
+      <item chance="0.50" name="Mag_Ruger1022_15Rnd"/>      
     </attachments>    
   </type>  
   <type name="PersonalRadio">    
