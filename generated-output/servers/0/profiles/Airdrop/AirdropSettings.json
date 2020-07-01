@@ -503,7 +503,9 @@
         "A2M9_Magazine",
         "A2Suppressor",
         "A2LRRAWM",
-        "A2LRRAWM_Magazine"
+        "A2LRRAWM_Magazine",
+        "FAL",
+        "Mag_FAL_20Rnd"
       ],
       "Container": "AirdropContainer",
       "Quantity": 20,
